@@ -97,7 +97,6 @@ class _CitiesWeatherJOState extends State<CitiesWeatherJO> {
                                 DropdownButtonHideUnderline(
                                   child: DropdownButton(
                                       value: dropdownCity,
-                                      //hint: Text('-- Select a city--'),
                                       icon: Icon(Icons.arrow_downward),
                                       onChanged: (String? newValue) {
                                         setState(() {
@@ -171,7 +170,7 @@ class _CitiesWeatherJOState extends State<CitiesWeatherJO> {
                                         color: Colors.yellow[400],
                                         elevation: 60,
                                         child: Padding(
-                                          padding: const EdgeInsets.all(12),
+                                          padding: const EdgeInsets.only(left: 12, right: 12, bottom: 12),
                                           child: Column(
                                             mainAxisAlignment:
                                                 MainAxisAlignment.center,
